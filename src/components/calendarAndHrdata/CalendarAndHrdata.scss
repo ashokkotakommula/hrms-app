@@ -1,0 +1,149 @@
+.SeconsTwo {
+    height: 100%;
+    width: 30%;
+    margin-left: 16px;
+    .card-three {
+        height: 250px;
+        margin-bottom: 16px;
+        border-radius: 16px;
+        border: 1.5px solid #ddd;
+        .calendar {
+            width: 100%;
+            padding: 4px;
+            margin: 0%;
+            line-height: 0px;
+            border: none;
+            color: teal;
+        }
+        .react-calendar__tile--active {
+            background: teal;
+            color: white;
+            border-radius: 16px;
+            margin: 0%;
+            padding: 0%;
+        }
+    }
+    .card-four {
+        height: 250px;
+        border: 1.5px solid #ddd;
+        border-radius: 16px;
+        .data-container {
+            padding-bottom: 10px;
+            border-bottom: 1.5px solid #eee;
+            .hr-info {
+                padding: 14px;
+                .hrimg-container {
+                    display: flex;                
+                    img {
+                        width: 50px;
+                        height: 50px;
+                        border-radius: 50%;
+                    }
+                    .name-container {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        padding-left: 16px;
+                        line-height: 16px;
+                        font-size: 14px;
+                        h6 {
+                          color: grey;
+                        }
+                    }
+                }
+            }
+            .hr-icon {
+                width: 150px;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                .call {
+                    margin-left: 16px;
+                    background: #ddd;
+                    height: 35px;
+                    width: 35px;
+                    border-radius: 50%;
+                    padding:   10px; 
+                    cursor: pointer;
+                }
+                .call:hover {
+                    border: 1px solid teal;
+                }
+                .msg {
+                    margin-left: 16px;
+                    background: #ddd;
+                    height: 35px;
+                    width: 35px;
+                    border-radius: 50%;
+                    padding:   10px; 
+                    cursor: pointer;
+                }
+                .msg:hover {
+                    border: 1px solid teal;
+                }
+                .dot {
+                    margin-left: 16px;
+                    background: #ddd;
+                    height: 35px;
+                    width: 35px;
+                    border-radius: 50%;
+                    padding:   10px; 
+                    cursor: pointer;
+                }
+                .dot:hover {
+                    border: 1px solid teal;
+                }
+            }
+        }
+        .details-container {
+            padding: 10px 14px 10px 14px;
+            .more-details {
+                display: flex;
+                flex-direction: column;
+                font-size: 12px;
+                p {
+                    margin: 4px;
+                    b {
+                        float: right;
+                    }
+                }
+                
+            }
+        }
+        .btn-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 0%;
+            button {
+                border: 1px solid white;
+                font-size: 12px;
+                width: 250px;
+                background: teal;
+                color: white;
+                outline: none;
+                border: none;
+                padding: 8px;
+                border-radius: 16px;
+                cursor: pointer;
+            }
+            button:hover {
+                border: 1px solid teal;
+                color: teal;
+                background: white;
+                transition: all 0.1s ease-in-out;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .SeconsTwo {
+        width: 95%;
+        //box-sizing: border-box;
+        margin-top: 16px;
+        .card-three {
+           
+        }
+    }
+}

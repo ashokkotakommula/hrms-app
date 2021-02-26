@@ -1,0 +1,56 @@
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 16px;
+    box-sizing: border-box;
+    .icon-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 80px;
+        svg {
+            margin-left: 15px;
+            cursor: pointer;
+        }
+        .search-icon {
+            border: 1px solid #ddd;
+            height: 30px;
+            padding: 3px;
+            border-radius: 15px;
+            input {
+                border: none;
+                outline: none;
+                height: 20px;
+                padding: 4px;
+            }
+            svg {
+                padding-top: 4px;
+            }
+        }
+        .search-icon:focus-within {
+            border: 1.5px solid teal;
+            svg {
+                color: teal;
+            }
+        }
+        
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .header-container {
+        h2 {
+            width: 150px;
+        }
+        .icon-container {
+            margin:auto;
+            .search-icon {
+                display: flex;
+            }
+            svg {
+                margin-left: 10px;
+            }
+        }
+    }
+}

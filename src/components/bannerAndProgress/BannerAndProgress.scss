@@ -1,0 +1,247 @@
+.firstTwo {
+    width: 70%;
+    height: 100%;
+    .card-one {
+        display: flex;
+        height: 180px;
+        margin-bottom: 16px;
+        border-radius: 16px;
+        background: #ddd;
+        //border: 1px solid teal; 
+        .para {
+            word-wrap: break-word;
+            width: 350px;
+            padding: 10px;
+            line-height: 28px;
+            font-size: 12px;
+            font-weight: bold;
+            margin: 16px;
+            .link {
+                text-decoration: underline;
+                color: black;
+            }
+        }
+        .banner-image {
+            width: 200px;
+            height: 150px;
+            object-fit: cover;
+            float: right;
+            margin: 16px 0px 0px 100px;
+        }
+    }
+    .card-two {
+        height: 320px;
+        //box-shadow: 0px 4px 16px 0px rgba($color: #000000, $alpha: 0.2);
+        border-radius: 16px;
+        border: 1.5px solid #ddd;
+        padding: 14px;
+        .head {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #eee;
+            padding: 8px;
+            //margin: 8px;
+            button {
+                box-sizing: border-box;
+                border: 1px solid white;
+                outline: none;
+                background: teal;
+                color: white;
+                width: 100px;
+                padding: 6px;
+                font-size: 12px;
+                border-radius: 16px;
+                cursor: pointer;
+            }
+            button:hover {
+                border: 1px solid teal;
+                color: teal;
+                background: white;
+                transition: all 0.1s ease-in-out;
+            }
+        }
+        .data-heading {
+            display: flex;
+            padding-top: 8px;
+            padding-left: 14px;
+            padding-bottom: 14px;
+            border-bottom: 1px solid #eee;
+            h5 {
+                width: 210px;
+            }
+        }
+        .users-list {
+            .user {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                border-bottom: 1px solid #eee;
+                padding-bottom: 6px;
+                padding-top: 6px;
+                padding-left: 10px;
+                div {
+                    display: flex;
+                    align-items: center;
+                    font-size: 12px;
+                    width: 230px;
+                    text-decoration: none;
+                    img {
+                        width: 30px;
+                        height: 30px;
+                        border-radius: 50%;
+                        margin-right: 10px;
+                    }
+                    span {
+                        display: inline-block;
+                        font-size: 8px;
+                        margin-right: 4px;
+                    }
+                }
+                .dots {
+                    color: lightgray;
+                    font-size: 25px;
+                    margin-right: 8px;
+                }
+            }
+        }
+        .results-container {
+            display: flex;
+            justify-content: space-between;
+            margin: 4px;
+            padding: 6px;
+            .results {
+                font-size: 12px;
+            }
+            button {
+                border: none;
+                outline: none;
+                font-weight: bold;
+                cursor: pointer;
+                font-size: 12px;
+                background: white;
+            }
+            button:hover {
+                color: teal;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .firstTwo {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 600px) {
+    .firstTwo {
+        .card-one {
+            .para {
+                font-size: 10px;
+                line-height: 22px;
+            }
+            .banner-image {
+                margin: 0;
+                padding-right: 10px;
+            }
+        }
+        .card-two {
+            height: 320px;
+            //box-shadow: 0px 4px 16px 0px rgba($color: #000000, $alpha: 0.2);
+            border-radius: 16px;
+            border: 1.5px solid #ddd;
+            padding: 14px;
+            .head {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                border-bottom: 1px solid #eee;
+                padding: 8px;
+                //margin: 8px;
+                button {
+                    box-sizing: border-box;
+                    border: 1px solid white;
+                    outline: none;
+                    background: teal;
+                    color: white;
+                    width: 100px;
+                    padding: 6px;
+                    font-size: 10px;
+                    border-radius: 16px;
+                    cursor: pointer;
+                }
+                button:hover {
+                    border: 1px solid teal;
+                    color: teal;
+                    background: white;
+                    transition: all 0.1s ease-in-out;
+                }
+            }
+            .data-heading {
+                display: flex;
+                padding-top: 8px;
+                padding-left: 14px;
+                padding-bottom: 14px;
+                border-bottom: 1px solid #eee;
+                h5 {
+                    width: 210px;
+                    font-size: 12px;
+                }
+            }
+            .users-list {
+                .user {
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    border-bottom: 1px solid #eee;
+                    padding-bottom: 6px;
+                    padding-top: 6px;
+                    padding-left: 10px;
+                    div {
+                        display: flex;
+                        align-items: center;
+                        font-size: 10px;
+                       
+                        text-decoration: none;
+                        img {
+                            width: 30px;
+                            height: 30px;
+                            border-radius: 50%;
+                            margin-right: 10px;
+                        }
+                        span {
+                            display: inline-block;
+                            font-size: 8px;
+                            margin-right: 4px;
+                        }
+                    }
+                    .dots {
+                        color: lightgray;
+                        font-size: 25px;
+                        margin-right: 8px;
+                    }
+                }
+            }
+            .results-container {
+                display: flex;
+                justify-content: space-between;
+                margin: 4px;
+                padding: 6px;
+                .results {
+                    font-size: 10px;
+                }
+                button {
+                    border: none;
+                    outline: none;
+                    font-weight: bold;
+                    cursor: pointer;
+                    font-size: 10px;
+                    background: white;
+                }
+                button:hover {
+                    color: teal;
+                }
+            }
+        }
+    }
+}

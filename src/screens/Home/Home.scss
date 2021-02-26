@@ -1,0 +1,27 @@
+.home-container {
+    padding: 16px;
+    //height: 100vh;
+    .dashboard-cards {
+        margin-top: 16px;
+        display: flex;
+    }
+}
+@media screen and (max-width: 900px) {
+    .home-container {
+        height: auto;
+        overflow-y: scroll;
+        .dashboard-cards {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            
+        }
+    }
+    
+}
+
+@import '../../components/header/Header.scss';
+@import '../../components/userData/UserData.scss';
+@import '../../components/bannerAndProgress/BannerAndProgress.scss';
+@import '../../components/calendarAndHrdata/CalendarAndHrdata.scss';
